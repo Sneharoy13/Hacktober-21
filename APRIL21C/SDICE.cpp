@@ -26,7 +26,8 @@ void solve()
 	cin >> n;
 	ll val = 0;
 	val = (n/4)*44;
-
+	ll num = val/2;
+	ll temp = num+num;
 	rem = (n%4);
 
 	if(n >= 4)
@@ -34,14 +35,6 @@ void solve()
 		if(rem == 0)
 		{
 			val = val + 16;
-		}
-		if(rem == 1)
-		{
-			val = val + 32;
-		}
-		if(rem == 2)
-		{
-			val = val + 44;
 		}
 		if(rem == 3)
 		{
@@ -59,11 +52,6 @@ void solve()
 		{
 			sum = 36;
 		}
-		if(rem == 3)
-		{
-			sum = 51;
-		}
-
 		cout<<sum<<"\n";
 
 	}	
